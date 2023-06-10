@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barber Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="banner">
+	<img src="images/logo.png" class="logo">
+	<div class="banner-text">
+		<h1>Hair studio</h1>
+		<p>Style your hair is style your life</p>
+		<div class="banner-btn">
+			<a href="Newpage.html"><span></span>Find Out</a>
+			<a href="Page.html"><span></span>Read More</a>
+		</div>
+	</div>
+	</section>
+
+<div id="sideNav">
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">FEATURES</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li><a href="#">TESTIMONIALS</a></li>
+			<li><a href="#">MEET US</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="images/menu.png" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="Feature">
+	<div class="title-text">
+		<p>FEATURES</p>
+		<h1>Why Choose Us</h1>
+	</div>
+	<div class="Feature-box">
+		<div class="Features">
+			<h1>Experienced Staff</h1>
+			<div class="Features-desc">
+				<div class="Feature-icon">
+					<i class="fa fa-shield"></i>
+				</div>
+				<div class="Feature-text">
+					<p>We have top class barbers who can make your dream haircuts in record time so you can reach your destination looking as fresh as ever.</p>
+				</div>
+			</div>
+			<h1>Pre Booking Online</h1>
+			<div class="Features-desc">
+				<div class="Feature-icon">
+					<i class="fa fa-check-square-o"></i>
+				</div>
+				<div class="Feature-text">
+					<p>You can schedule your session by pre-booking online.</p>
+				</div>
+			</div>
+			<h1>Affordable Services</h1>
+			<div class="Features-desc">
+				<div class="Feature-icon">
+					<i class="fa fa-inr"></i>
+				</div>
+				<div class="Feature-text">
+					<p>We provide our services for affordable prices that you can trust.</p>
+				</div>
+			</div>
+		</div>
+		<div class="features-img">
+		<img src="images/barber-man.jpg">
+	    </div>
+	</div>
+	
+</section>
+
+
+<!--Service-->
+
+<section id="Service">
+	<div class="title-text">
+		<p>SERVICES</p>
+		<H1>We provide better</H1>
+	</div>
+	<div class="Service-box">
+		<div class="single-service">
+			<img src="images/pic-1.jpg">
+			<div class="overlay"></div>
+			<div class="Service-desc">
+				<h3>Hair Styling</h3>
+				<hr>
+				<p>We can recreate any fantasy of yours. If you can dream it, we can make it happen.</p>
+			</div>
+		</div>
+		<div class="single-service">
+			<img src="images/pic-2.jpg">
+			<div class="overlay"></div>
+			<div class="Service-desc">
+				<h3>Beard Trim</h3>
+				<hr>
+				<p>No more bushy and itchy beards.Get that beard trimmed and look like a star. Trreatments also offered.</p>
+			</div>
+		</div>
+		<div class="single-service">
+			<img src="images/pic-3.jpg">
+			<div class="overlay"></div>
+			<div class="Service-desc">
+				<h3>Hair Cut</h3>
+				<hr>
+				<p>Hair cuts don't have to be basic. Cut styles that would make you look unique.</p>
+			</div>
+		</div>
+		<div class="single-service">
+			<img src="images/pic-4.jpg">
+			<div class="overlay"></div>
+			<div class="Service-desc">
+				<h3>Hair Wash</h3>
+				<hr>
+				<p>You don't have to worry when your hair gets dirty. Get your hair shampooed and conditioned here.</p>
+			</div>
+		</div>
+	</div>	
+</section>
+
+
+<!--Testimonial-->
+
+<section id="Testimonial">
+	<div class="title-text">
+		<p>TESTIMONIAL</p>
+		<h1>What Clients say</h1>
+	</div>
+</section>
+
+
+
+
+<script>
+	var menuBtn = document.getElementById('menuBtn')
+	var sideNav = document.getElementById('sideNav')
+	var menu = document.getElementById('menu')
+
+	sideNav.style.right = "-250px";
+
+	menuBtn.onclick = function(){
+		if (sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src ="images/close.png"
+		}
+		else{
+			sideNav.style.right = "-250px"
+			menu.src = "images/menu.png"
+		}
+	}
+</script>
+</body>
+</html>  
